@@ -1,1 +1,1 @@
-This file contains pointers, arrays and string tasks.
+This file contains various pointers, arrays and string tasks.
