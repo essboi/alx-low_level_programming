@@ -7,7 +7,7 @@
   * @dest: The destination of the string
   * @n: The length of the integer
   *
-  * Return: Pointer to the resulting string
+  * Return: dest
   */
 
 char *_strncpy(char *dest, char *src, int n)
