@@ -27,7 +27,8 @@ int _prime_actual(int n, int x)
 }
 
 /**
- * is_prime_number - says if an integer is a prime number or not
+ * is_prime_number - This function determines
+ * if an input integer is a prime number or not
  *
  * @n: parameter to evaluate
  *
