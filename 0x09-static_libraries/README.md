@@ -1,1 +1,1 @@
-This directory contains static libraries' tasks
+This directory contains static libraries' tasks.
