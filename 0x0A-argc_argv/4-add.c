@@ -10,28 +10,31 @@
   * Return: 1 if error
   */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int a;
-	int sum = 0;
+	int i, n, sum = 0;
+	char *flag;
 
 	if (argc < 2)
 	{
 		printf("0\n");
+		return (0);
 	}
-	else
+
+	for (i = 1; argv[i]; i++)
 	{
-		for (a = 1; a < argc; a++)
+		n = strtol(argv[i], &flag, 10);
+		if (*flag)
 		{
-			if (!atoi(argv[a]))
-			{
-				printf("Error\n");
-				return (1);
-			}
-			else
-				sum += atoi(argv[a]);
+			printf("Error\n");
+			return (1);
 		}
-		printf("%d\n", sum);
+		else
+		{
+			sum += n;
+		}
 	}
+	printf("%d\n", sum);
+
 	return (0);
 }
