@@ -1,11 +1,11 @@
 #include<stdio.h>
 
+void theHareandTortoise(void) __attribute__ ((constructor));
+
 /**
- * theHareandTortoise - Apply the constructor attribute to myStartupFun()
- * so that it is executed before main()
- * void theHareandTortoise(void) __attribute__ ((constructor));
- * theHareandTortoise - implementation of theHareandTortoise
- */
+ * theHareandTortoise - The constructor attribute is applied to
+ * theHareandTortoise() so that it is executed before main()
+*/
 
 void theHareandTortoise(void)
 {
